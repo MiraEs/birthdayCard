@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/cake"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#f2bcfb"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_above="@+id/cake"
+        android:layout_alignLeft="@+id/candle"
+        android:layout_alignStart="@+id/candle"
+        android:layout_marginBottom="25dp"
+        android:background="#FFA500" />
+
+    <View
+        android:id="@+id/candle"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/cake"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:text="Happy Birthday ME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="20dp"
+        android:text="From Me" />
+
+</RelativeLayout>
